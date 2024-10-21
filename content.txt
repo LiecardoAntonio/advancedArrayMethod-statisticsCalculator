@@ -1,4 +1,31 @@
 FCC Advanced Array Method - Statistics Calculator
 
 CONTENT:
-1. 
+1. (RECALL) string.split('charOrRegex');
+  > The .split() method takes a string and splits it into an array of strings. You can pass it a string of characters or a RegEx to use as a separator. For example, string.split(",") would split the string at each comma and return an array of strings.
+  > ex:
+  const array = value.split(/,\s*/g); //split string by commas.
+
+2. (CONCEPT) The value of an input element is always a string, even if the input type is number.
+
+3. (RECALL) Number(argument) constructor
+  > the number constructor will convert the argument passed to it into a number datatype
+  > The Number() constructor will return NaN (which stands for "not a number") if the value passed to it cannot be converted to a number.
+
+4. (RECALL) array.map()
+  > the .map() method can be used to make a collection into array datatype
+  > The .map() method takes a callback function as its first argument. This callback function takes a few arguments, but the first one is the current element being processed. Here is an example:
+  > ex:
+  array.map(el => {
+    el+=1;
+  })
+
+5. (RECALL) array.filter()
+  > The .filter() method will allow you to filter elements out of an array, creating a new array in the process.
+  > this method requires a callback function that return a boolean value, which indicates whether the element should be included in the new array
+  > ex:
+  array.filter(el => el>=3);
+
+6. NaN datatype
+  > NaN (not a number).
+  > Note: we cannot compare a NaN (not a number) value to a itself. So if we have a NaN value and we want to check if it's a NaN value, we cannot do NaN==NaN. Instead we use isNaN() method, which returns boolean true if the argument is NaN.
