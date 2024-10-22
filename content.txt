@@ -48,3 +48,14 @@ CONTENT:
 
 10. array.toSorted(() => {});
   > The .sort() method mutates the original array - in other words, it modifies the order of the elements directly. This is generally considered bad practice, as it can result in unexpected side effects. Instead, you should use the .toSorted() method, which creates a new array. 
+
+11. Object.values()
+  > 
+
+12. Set() constructor
+  > A Set is a data structure that only allows unique values. If you pass an array into the Set constructor, it will remove any duplicate values.
+  > ex:
+  const set1 = new Set([1, 2, 2, 3, 4, 5]);
+  console.log(set1)
+
+13. Object.keys()
