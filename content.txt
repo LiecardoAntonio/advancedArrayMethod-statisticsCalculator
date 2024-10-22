@@ -50,7 +50,15 @@ CONTENT:
   > The .sort() method mutates the original array - in other words, it modifies the order of the elements directly. This is generally considered bad practice, as it can result in unexpected side effects. Instead, you should use the .toSorted() method, which creates a new array. 
 
 11. Object.values()
-  > 
+  > Object.values() is a built-in method that returns an array of the values of an object's own enumerable property values, in the same order as provided by a for...in loop. This is useful for retrieving only the values without the keys.
+  > ex:
+  const person = {
+    name: 'Antonio',
+    age: 23,
+    city: 'Jakarta'
+  };
+  const values = Object.values(person);
+  console.log(values); // Output: ['Antonio', 23, 'Jakarta']
 
 12. Set() constructor
   > A Set is a data structure that only allows unique values. If you pass an array into the Set constructor, it will remove any duplicate values.
@@ -59,3 +67,24 @@ CONTENT:
   console.log(set1)
 
 13. Object.keys()
+  > Object.keys() is a method that returns an array of the object's own enumerable property names (keys). The order of the keys is the same as that given by a for...in loop (except it only returns the object's own properties, not inherited ones).
+  > ex:
+  const person = {
+    name: 'Antonio',
+    age: 23,
+    city: 'Jakarta'
+  };
+
+  const keys = Object.keys(person);
+  console.log(keys); // Output: ['name', 'age', 'city']
+
+14. Math.pow(base, exponent);
+  > JavaScript has a built-in Math.pow() function that can be used to calculate exponents.
+  > ex:
+  const base = 4;
+  const exponent = 0.5;
+  // returns 2
+  Math.pow(base, exponent);
+
+15. Math.sqrt()
+  > The Math object has a .sqrt() method specifically for finding the square root of a number.
