@@ -29,3 +29,22 @@ CONTENT:
 6. NaN datatype
   > NaN (not a number).
   > Note: we cannot compare a NaN (not a number) value to a itself. So if we have a NaN value and we want to check if it's a NaN value, we cannot do NaN==NaN. Instead we use isNaN() method, which returns boolean true if the argument is NaN.
+
+7. (CONCEPT) method chaining
+  > Array methods can often be chained together to perform multiple operations at once. 
+  > ex:
+  array.map().filter(); //The .map() method is called on the array, and then the .filter() method is called on the result of the .map() method. This is called method chaining.
+
+8. array.reduce(() => {})
+  > Arrays have another method, called .reduce(), which is perfect for summing all of the numbers in the list. The .reduce() method takes an array and applies a callback function to condense the array into a single value.
+  > Like the other methods, .reduce() takes a callback. This callback, however, takes at least two parameters. The first is the accumulator, and the second is the current element in the array. The return value for the callback becomes the value of the accumulator on the next iteration.
+  > The .reduce() method takes a second argument that is used as the initial value of the accumulator. Without a second argument, the .reduce() method uses the first element of the array as the accumulator, which can lead to unexpected results.To be safe, it's best to set an initial value. Here is an example of setting the initial value to an empty string:
+  array.reduce((acc, el) => acc + el.toLowerCase(), "");
+
+9. element onsubmit attribute
+  > The onsubmit event attribute in HTML is triggered when a form is submitted. It is basically triggered when a form is submitted, either by clicking a submit button or using JavaScript.
+  > by default the onsubmit attribute will triggers a page refresh after submit event happen. to prevent this we need to add return false; after the onsubmit action. example:
+  <form onsubmit="calculate(); return false;">
+
+10. array.toSorted(() => {});
+  > The .sort() method mutates the original array - in other words, it modifies the order of the elements directly. This is generally considered bad practice, as it can result in unexpected side effects. Instead, you should use the .toSorted() method, which creates a new array. 
